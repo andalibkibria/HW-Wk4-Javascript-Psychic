@@ -4,49 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <title>The Psychic Game</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-  <div class="col-md-3"></div>
-      <div class="col-md-6 text-center">
-        <header>
-        <h1>The Psychic Game</h1>
-        </header>
-        <div class="instructions">
-          <h3>Guess the computer's letter of choice.</h3>
-          <h4>[Press the letters on the keyboard to continue]</h4>
-        </div>
-    
-        
-        <div id="game">
-          <ul class="list-group">
-            <li class="list-group-item"><p id="guessLeft">Guesses Left: </p></li>
-            <li class="list-group-item"><p id="wins">Wins: </p></li>
-            <li class="list-group-item"><p id="losses">Losses: </p></li>
-            <li class="list-group-item"><p id="let">Your Guesses: </p></li>
-          </ul>  
-        </div>
-      </div>
-  </div>
+  	<div class="wrapper">
+  	<div class="col-lg-3 col-md-3 col-xs-2"></div>
+		<div class="row col-lg-6 col-md-6 col-xs-8 text-center">
+			<header>
+				<h1>The Psychic Game</h1>
+			</header>
+
+			<div class="container">
+				<p>[Press the letters on the keyboard to continue]</p>
+			</div>
 
 
-  <div class="col-md-12">
-    <div class="footer push">
-      <footer class="footer text-center">
-        <div class="container">
-          <p>&copy; 2017 Andalib Kibria</p>
-        </div>
-      </footer>
-    </div>
-  </div>
-    
+	        <div id="game">
+	          <ul class="list-group">
+	            <span class="list-group-item col-md-6 col-xs-6">
+	            	<p id="wins">Wins: </p>
+	            </span>
+	            
+	            <span class="list-group-item col-md-6 col-xs-6">
+	            	<p id="losses">Losses: </p>
+	            </span>
+	            
+	            <span class="list-group-item col-md-12 col-xs-12">
+	            	<p id="guessLeft">Guesses Left: </p>
+	            </span>
+	            
+	            <span class="list-group-item col-md-12 col-xs-12">
+	            	<p id="let">Your Guesses:</p>
+	            </span>
+	          </ul>  
+	        </div>
+
+
+			<div class="container">
+				<h3>...choose wisely...</h3>
+			</div>
+	    </div>
+	</div>
+
+
+	<div class="container">
+    	<footer class="footer text-center">
+        	<p>&copy; 2017 Andalib Kibria</p>
+      	</footer>
+	</div>
+
+
 
 	<script type="text/javascript">
-
 		var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 		var wins = 0;
